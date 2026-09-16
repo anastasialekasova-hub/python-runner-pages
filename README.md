@@ -4,4 +4,4 @@ Welcome, uninstall and privacy pages for the Python Runner Chrome extension, ser
 
 - `/welcome/` — opens once after installation
 - `/uninstall/` — feedback form, opens when the extension is removed
-- `/privacy/` — privacy policy for the Chrome Web Store listing
+- privacy policy lives in a separate repo: https://github.com/anastasialekasova-hub/python-runner-privacy
