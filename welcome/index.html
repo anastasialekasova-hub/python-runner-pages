@@ -15,7 +15,7 @@
     font: 17px/1.55 "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
     font-synthesis: none;
   }
-  .shell { max-width: 780px; margin: 0 auto; padding: 32px 24px 80px; }
+  .shell { max-width: 780px; margin: 0 auto; padding: 24px 24px 64px; }
 
   .brand { display: flex; align-items: center; gap: 13px; margin-bottom: 26px; }
   .mark { display: flex; flex: 0 0 auto; }
@@ -23,9 +23,9 @@
 
   h1 { font-size: 31px; line-height: 1.16; letter-spacing: -0.02em; text-wrap: balance; }
   h1 em { font-style: normal; color: #e8a33d; }
-  .lede { margin-top: 12px; font-size: 18px; color: #b3a996; max-width: 56ch; }
+  .lede { margin-top: 10px; font-size: 18px; color: #b3a996; max-width: 56ch; }
 
-  .step { margin-top: 34px; }
+  .step { margin-top: 26px; }
   .step h2 { font-size: 24px; letter-spacing: -0.01em; }
   .step > p { margin-top: 8px; color: #b3a996; max-width: 58ch; }
 
@@ -33,20 +33,16 @@
   .shot {
     position: relative; margin-top: 16px; border-radius: 14px; overflow: hidden;
     border: 1px solid #3a332c; box-shadow: 0 18px 50px rgba(0,0,0,.4); background: #262220;
-    width: min(94vw, 1000px);
+    width: min(94vw, 780px);
     left: 50%; transform: translateX(-50%);
   }
   .shot img { width: 100%; height: auto; display: block; }
 
-  .cta-block { margin-top: 52px; text-align: center; }
-  .cta {
-    display: inline-block; padding: 16px 30px; border-radius: 13px;
+        display: inline-block; padding: 16px 30px; border-radius: 13px;
     background: #e8a33d; color: #1b1815; font-weight: 700; text-decoration: none; font-size: 19px;
   }
-  .cta:hover { background: #f0b254; }
-
-  .cta-note { margin-top: 12px; font-size: 14px; color: #8f867a; }
-  strong { font-weight: 600; color: #f2ece2; }
+  
+    strong { font-weight: 600; color: #f2ece2; }
   footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid #3a332c; font-size: 14px; color: #8f867a; }
   footer a { color: #b3a996; }
 </style>
@@ -67,23 +63,11 @@
     <section class="step">
       <h2>Click the icon, then “Open Python Runner”</h2>
       <p>The runner opens in its own tab: editor on the left, output on the right. The first start
-         unpacks Python once and takes a couple of seconds; after that it opens instantly.</p>
+         unpacks Python once and takes a couple of seconds; after that it opens instantly.<br>Tip: select Python on any page and right-click — <strong>Run selected Python</strong> opens it here.</p>
       <div class="shot">
         <img src="step-3-popup.png" alt="Python Runner popup opened from the toolbar icon; step 3 — the Open Python Runner button" width="1760" height="960">
       </div>
     </section>
-    <section class="step">
-      <h2>Or right-click any code on any page</h2>
-      <p>Select a snippet in the docs, on GitHub or in a chat, choose <strong>Run selected Python</strong> —
-         the runner opens with the code pasted in, indentation intact, and runs it right away.</p>
-      <div class="shot">
-        <img src="step-4-context-menu.png" alt="A page with selected Python code and the right-click menu; step 4 — the Run selected Python item" width="1760" height="760">
-      </div>
-    </section>
-    <div class="cta-block">
-      <a class="cta" href="https://docs.python.org/3/library/statistics.html#statistics.median" target="_blank" rel="noopener">Try it on the Python docs →</a>
-      <p class="cta-note">Opens docs.python.org — select any example and right-click.</p>
-    </div>
     <footer>
       Questions or a bug? <a href="https://github.com/anastasialekasova-hub/python-runner-pages/issues" target="_blank" rel="noopener">Open an issue on GitHub</a>.
       &nbsp;·&nbsp; <a href="https://anastasialekasova-hub.github.io/python-runner-privacy/">Privacy</a>
